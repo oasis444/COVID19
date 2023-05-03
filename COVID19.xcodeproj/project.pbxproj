@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3320B29729FE7406005C0FE2 /* CovidDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3320B29629FE7406005C0FE2 /* CovidDetailVC.swift */; };
+		3320B29929FE7B7A005C0FE2 /* CityCovidOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3320B29829FE7B7A005C0FE2 /* CityCovidOverview.swift */; };
+		3394BCFA29FEEDC700B4104D /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 3394BCF929FEEDC700B4104D /* Charts */; };
 		33E51BD029FD96FD00290B9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E51BCF29FD96FD00290B9C /* AppDelegate.swift */; };
 		33E51BD229FD96FD00290B9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E51BD129FD96FD00290B9C /* SceneDelegate.swift */; };
 		33E51BD429FD96FD00290B9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E51BD329FD96FD00290B9C /* ViewController.swift */; };
@@ -40,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		0B335B8EBF5E8090B78756B1 /* Pods-COVID19.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID19.release.xcconfig"; path = "Target Support Files/Pods-COVID19/Pods-COVID19.release.xcconfig"; sourceTree = "<group>"; };
+		3320B29629FE7406005C0FE2 /* CovidDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidDetailVC.swift; sourceTree = "<group>"; };
+		3320B29829FE7B7A005C0FE2 /* CityCovidOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCovidOverview.swift; sourceTree = "<group>"; };
 		33E51BCC29FD96FD00290B9C /* COVID19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVID19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E51BCF29FD96FD00290B9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33E51BD129FD96FD00290B9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3460464190182E6BC32E8E1 /* Pods_COVID19.framework in Frameworks */,
+				3394BCFA29FEEDC700B4104D /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +125,9 @@
 				33E51BCF29FD96FD00290B9C /* AppDelegate.swift */,
 				33E51BD129FD96FD00290B9C /* SceneDelegate.swift */,
 				33E51BD329FD96FD00290B9C /* ViewController.swift */,
+				3320B29829FE7B7A005C0FE2 /* CityCovidOverview.swift */,
 				33E51BD529FD96FD00290B9C /* Main.storyboard */,
+				3320B29629FE7406005C0FE2 /* CovidDetailVC.swift */,
 				33E51BD829FD96FE00290B9C /* Assets.xcassets */,
 				33E51BDA29FD96FE00290B9C /* LaunchScreen.storyboard */,
 				33E51BDD29FD96FE00290B9C /* Info.plist */,
@@ -154,7 +162,6 @@
 				507444BE982696536146D2B9 /* Pods-COVID19Tests.debug.xcconfig */,
 				B7E57FD5FB77EADAAC78BABA /* Pods-COVID19Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -186,6 +193,9 @@
 			dependencies = (
 			);
 			name = COVID19;
+			packageProductDependencies = (
+				3394BCF929FEEDC700B4104D /* Charts */,
+			);
 			productName = COVID19;
 			productReference = 33E51BCC29FD96FD00290B9C /* COVID19.app */;
 			productType = "com.apple.product-type.application";
@@ -261,6 +271,9 @@
 				Base,
 			);
 			mainGroup = 33E51BC329FD96FD00290B9C;
+			packageReferences = (
+				3394BCF829FEEDC700B4104D /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 33E51BCD29FD96FD00290B9C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -410,6 +423,8 @@
 				33E51BD429FD96FD00290B9C /* ViewController.swift in Sources */,
 				33E51BD029FD96FD00290B9C /* AppDelegate.swift in Sources */,
 				33E51BD229FD96FD00290B9C /* SceneDelegate.swift in Sources */,
+				3320B29929FE7B7A005C0FE2 /* CityCovidOverview.swift in Sources */,
+				3320B29729FE7406005C0FE2 /* CovidDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,6 +772,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3394BCF829FEEDC700B4104D /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3394BCF929FEEDC700B4104D /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3394BCF829FEEDC700B4104D /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 33E51BC429FD96FD00290B9C /* Project object */;
 }

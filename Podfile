@@ -6,7 +6,6 @@ target 'COVID19' do
   use_frameworks!
   
   pod 'Alamofire'
-  pod 'Charts'
 
   # Pods for COVID19
 
